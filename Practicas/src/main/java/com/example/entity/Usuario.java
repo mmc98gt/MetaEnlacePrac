@@ -111,6 +111,4 @@ public class Usuario {
 		this.clave = clave;
 	}
 
-
-
 }

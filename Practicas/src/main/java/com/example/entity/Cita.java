@@ -34,8 +34,6 @@ public class Cita {
 	private Medico medico;
 	@OneToOne(mappedBy = "cita", cascade = CascadeType.ALL, orphanRemoval = true)
 	private Diagnostico diagnostico;
-
-	public Cita() {}
 	
 	/**
 	 * @param citaID, Entero. ID de cita
@@ -152,7 +150,5 @@ public class Cita {
 	public void setAttribute11(Integer attribute11) {
 		this.attribute11 = attribute11;
 	}
-	
-	
 	
 }

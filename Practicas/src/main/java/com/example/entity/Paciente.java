@@ -44,7 +44,7 @@ public class Paciente extends Usuario {
 	 * @param telefono, String. Telefono del paciente
 	 * @param direccion, String. Resicencia del paciente
 	 * @param medicos, List. Lista de medicos que atienden al paciente
-	 * @param cita
+	 * @param cita, Cita. Cita actual del paciente
 	 */
 	public Paciente(Integer userID, String usuario, String nombre, String apellidos, String clave, String nSS,
 			String numTarjeta, String telefono, String direccion, List<Medico> medicos, List<Cita> citas) {
@@ -59,87 +59,85 @@ public class Paciente extends Usuario {
 	}
 
 	/**
-	 * @return the nSS
+	 * @return el nSS
 	 */
 	public String getNSS() {
 		return NSS;
 	}
 
 	/**
-	 * @param nSS the nSS to set
+	 * @param nSS nSS del paciente
 	 */
 	public void setNSS(String nSS) {
 		NSS = nSS;
 	}
 
 	/**
-	 * @return the numTarjeta
+	 * @return el numTarjeta
 	 */
 	public String getNumTarjeta() {
 		return numTarjeta;
 	}
 
 	/**
-	 * @param numTarjeta the numTarjeta to set
+	 * @param numTarjeta numTarjeta del paciente
 	 */
 	public void setNumTarjeta(String numTarjeta) {
 		this.numTarjeta = numTarjeta;
 	}
 
 	/**
-	 * @return the telefono
+	 * @return el telefono
 	 */
 	public String getTelefono() {
 		return telefono;
 	}
 
 	/**
-	 * @param telefono the telefono to set
+	 * @param telefono telefono del paciente
 	 */
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
 
 	/**
-	 * @return the direccion
+	 * @return la direccion
 	 */
 	public String getDireccion() {
 		return direccion;
 	}
 
 	/**
-	 * @param direccion the direccion to set
+	 * @param direccion direccion del paciente
 	 */
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
 	}
 
 	/**
-	 * @return the medicos
+	 * @return los medicos
 	 */
 	public List<Medico> getMedicos() {
 		return medicos;
 	}
 
 	/**
-	 * @param medicos the medicos to set
+	 * @param medicos medicos del paciente
 	 */
 	public void setMedicos(List<Medico> medicos) {
 		this.medicos = medicos;
 	}
 
+
 	/**
-	 * @return the cita
-	 */
-	/**
-	 * @return the citas
+	 * @return las citas
 	 */
 	public List<Cita> getCitas() {
 		return citas;
 	}
 
 	/**
-	 * @param citas the citas to set
+	 * @param citas citas del paciente
 	 */
 	public void setCitas(List<Cita> citas) {
 		this.citas = citas;

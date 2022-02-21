@@ -23,8 +23,6 @@ public class Diagnostico {
 	@OneToOne
 	@JoinColumn(name = "CITA")
 	private Cita cita;
-
-	public Diagnostico() {}
 	
 	/**
 	 * @param diagnosticoID, Entero. ID del diagnostico

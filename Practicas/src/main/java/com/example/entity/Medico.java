@@ -22,16 +22,15 @@ public class Medico extends Usuario {
 	@OneToMany(mappedBy = "medico", cascade = CascadeType.ALL)
 	private List<Cita> citas;
 
-	
 	/**
 	 * @param userID, Entero. que identifica a un usuario
 	 * @param usuario, String. Nombre de usuario
 	 * @param nombre, String. Nombre real
 	 * @param apellidos, String. Apellidos
 	 * @param clave, String. Contraseña
-	 * @param numColegiado,
-	 * @param pacientes
-	 * @param cita
+	 * @param numColegiado, String. Numero de colegiado del medico
+	 * @param pacientes, List. Lista de pacientes
+	 * @param cita, Cita. Cita actual del medico
 	 */
 	public Medico(Integer userID, String usuario, String nombre, String apellidos, String clave, String numColegiado,
 			List<Paciente> pacientes, List<Cita> citas) {
@@ -42,42 +41,42 @@ public class Medico extends Usuario {
 	}
 
 	/**
-	 * @return the numColegiado
+	 * @return el numColegiado
 	 */
 	public String getNumColegiado() {
 		return numColegiado;
 	}
 
 	/**
-	 * @param numColegiado the numColegiado to set
+	 * @param numColegiado numColegiado del medico
 	 */
 	public void setNumColegiado(String numColegiado) {
 		this.numColegiado = numColegiado;
 	}
 
 	/**
-	 * @return the pacientes
+	 * @return los pacientes
 	 */
 	public List<Paciente> getPacientes() {
 		return pacientes;
 	}
 
 	/**
-	 * @param pacientes the pacientes to set
+	 * @param pacientes pacientes del medico
 	 */
 	public void setPacientes(List<Paciente> pacientes) {
 		this.pacientes = pacientes;
 	}
 
 	/**
-	 * @return the citas
+	 * @return las citas
 	 */
 	public List<Cita> getCitas() {
 		return citas;
 	}
 
 	/**
-	 * @param citas the citas to set
+	 * @param citas las citas del medico
 	 */
 	public void setCitas(List<Cita> citas) {
 		this.citas = citas;
