@@ -9,6 +9,9 @@ public class CitaDTO {
 	private Integer citaPacienteUserID;
 	private Integer citaMedicoUserID;
 	private Integer diagnosticoDiagnosticoID;
+	private Integer attribute11;
+
+
 	/**
 	 * @return the citaCitaID
 	 */
@@ -81,6 +84,17 @@ public class CitaDTO {
 	public void setDiagnosticoDiagnosticoID(Integer diagnosticoDiagnosticoID) {
 		this.diagnosticoDiagnosticoID = diagnosticoDiagnosticoID;
 	}
-	
+	/**
+	 * @return the attribute11
+	 */
+	public Integer getAttribute11() {
+		return attribute11;
+	}
+	/**
+	 * @param attribute11 the attribute11 to set
+	 */
+	public void setAttribute11(Integer attribute11) {
+		this.attribute11 = attribute11;
+	}
 	
 }

@@ -15,6 +15,7 @@ public class PacienteDTO{
 	private String pacienteDireccion;
 	private List<Integer> pacienteMedicosUserID;
 	private List<Integer> pacienteCitasCitaID;
+	
 	/**
 	 * @return the pacienteUserID
 	 */

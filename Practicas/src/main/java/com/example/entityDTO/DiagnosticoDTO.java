@@ -5,6 +5,7 @@ public class DiagnosticoDTO {
 	private String diagnosticoEnfermedad;
 	private String diagnosticoValoracionEspecialista;
 	private Integer diagnosticoCitaCitaID;
+	
 	/**
 	 * @return the diagnosticoDiagnosticoID
 	 */

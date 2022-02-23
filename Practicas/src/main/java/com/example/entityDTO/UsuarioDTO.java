@@ -6,6 +6,7 @@ public class UsuarioDTO {
 	private String usuarioNombre;
 	private String usuarioApellidos;
 	private String usuarioClave;
+	
 	/**
 	 * @return the usuarioUserID
 	 */

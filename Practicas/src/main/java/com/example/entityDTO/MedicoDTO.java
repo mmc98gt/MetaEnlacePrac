@@ -9,8 +9,9 @@ public class MedicoDTO{
 	private String medicoApellidos;
 	private String medicoClave;
 	private String medicoNumColegiado;
-	private List<Integer> medicoPacientesUserID;//Necesita ser llamado asi para que por lo menos se mapeen
-	private List<Integer> medicoCitasCitaID;//como atributos de tipo list<integer>
+	private List<Integer> medicoPacientesUserID;
+	private List<Integer> medicoCitasCitaID;
+	
 	/**
 	 * @return the medicoUserID
 	 */
